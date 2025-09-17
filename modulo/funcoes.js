@@ -120,8 +120,6 @@ const getEstadosByRegiao = function (regiao) {
 // Retorna uma lista de estados referentes as capitais do páis
 const getVerifyCapitaisDoPais = function () {
 
-
-
     let capitalPais = {
         status: true,
         status_code: 200,
@@ -139,8 +137,6 @@ const getVerifyCapitaisDoPais = function () {
             let anoInicioCapital = item.capital_pais.ano_inicio
             let anoTerminoCapital = item.capital_pais.ano_fim
 
-
-
             capitalPais.capitais.push({
                 capital_atual: capitalAtual,
                 uf: sigla,
@@ -150,8 +146,6 @@ const getVerifyCapitaisDoPais = function () {
                 capital_pais_ano_inicio: anoInicioCapital,
                 capital_pais_ano_termino: anoTerminoCapital
             })
-
-            
         }
         
     })
@@ -193,8 +187,6 @@ const getCidadesBySigla = function (estado) {
     }
 
 }
-getVerifyCapitaisDoPais()
-
 
 module.exports = {
     getAllEstados,
