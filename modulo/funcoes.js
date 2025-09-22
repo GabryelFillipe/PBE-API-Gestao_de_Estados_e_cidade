@@ -129,6 +129,7 @@ const getVerifyCapitaisDoPais = function () {
     dados.listaDeEstados.estados.forEach(function (item) {
         if (item.capital_pais) {
 
+            // Criando variáveis para uso no JSON
             let capitalAtual = item.capital_pais.capital
             let sigla = item.sigla
             let nome = item.nome
@@ -137,6 +138,7 @@ const getVerifyCapitaisDoPais = function () {
             let anoInicioCapital = item.capital_pais.ano_inicio
             let anoTerminoCapital = item.capital_pais.ano_fim
 
+            // Criando estrutura do JSON
             capitalPais.capitais.push({
                 capital_atual: capitalAtual,
                 uf: sigla,
